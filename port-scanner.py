@@ -30,7 +30,7 @@ def main():
         start_port = int(sys.argv[2]) if len(sys.argv) > 2 else 1
         end_port = int(sys.argv[3]) if len(sys.argv) > 3 else 1024
     else:
-        target = input("Host to scan (e.g. 127.0.0.1): ").strip() or "127.0.0.1"
+        target = input("Host to scan: ").strip()
         start_port = int(input("Start port [1]: ").strip() or 1)
         end_port = int(input("End port [1024]: ").strip() or 1024)
  
